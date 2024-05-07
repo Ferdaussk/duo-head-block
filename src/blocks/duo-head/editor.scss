@@ -1,0 +1,247 @@
+/*
+* Style Works for Editor Only
+*/
+
+.wp-block-bwd-duo-head {
+	display: block;
+	.block-editor-block-list__layout {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+	.block-list-appender {
+		position: relative !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.block-editor-button-block-appender {
+			background: #017cba;
+			color: #fff;
+			box-shadow: none;
+			&::before {
+				content: "Add Team Item";
+				font-weight: 500;
+				font-size: 16px;
+			}
+			svg {
+				display: none;
+			}
+		}
+	}
+}
+.bwddhb-add-item {
+	background: #007cba;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 0;
+    padding: 18px 12px;
+    margin-top: 10px;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+	&:hover {
+		color: #fff;
+	}
+	span {
+		font-size: 16px;
+		height: 12px;
+	}
+}
+.duo-head-block-container {
+	.components-panel__body {
+		width: 100%;
+		border-top: none;
+	}
+	.components-panel__body-toggle {
+		&.components-button {
+			padding-top: 13px;
+			padding-bottom: 13px;
+			padding-left: 39px;
+		}
+	}
+	.bwddhb-image-control {
+		position: relative;
+		width: 100%;
+		.bwddhb-placeholder-image {
+			cursor: pointer;
+			text-align: center;
+			padding: 20px;
+			border: 2px dashed #ccc;
+			background-color: #f9f9f9;
+			display: block;
+			height: 100%;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			span {
+				display: block;
+				margin-top: 5px;
+			}
+		}
+		.bwddhb-image-preview-container {
+			position: relative;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			.bwddhb-image-preview-wrapper {
+				height: 200px;
+				width: 100%;
+				 img {
+					height: 100%;
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+			.bwddhb-edit-icon,
+			.bwddhb-close-icon {
+				position: absolute;
+				top: 6px;
+				right: 6px;
+				cursor: pointer;
+				background-color: #c3c2c2;
+				padding: 4px;
+				border-radius: 50%;
+				width: 25px;
+				height: 25px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.bwddhb-edit-icon {
+				z-index: 1;
+			}
+			.bwddhb-close-icon {
+				z-index: 2;
+			}
+		}
+	}
+	.bwddhb-team-img {
+		font-weight: 500;
+	}
+	.bwddhb-icon-label {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.bwddhb-icon-link {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.duo-head-block-container, .bwddhb-icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	position: relative;
+	&:hover {
+		background: #f0f0f03b;
+	}
+	.components-button {
+		&:focus {
+			box-shadow: none;
+		}
+		&:not(:disabled) {
+			box-shadow: none;
+		}
+	}
+	.components-panel__body-title {
+		&:hover {
+			background: none;
+		}
+	}
+}
+.bwddhb-icon-container .is-opened {
+	+ .bwddhb-remove-icon {
+		display: none;
+	}
+}
+.bwddhb-remove-item, .bwddhb-remove-icon {
+	color: #dc3232;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    padding: 0px 7px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+	left: 0;
+    transform: translateY(-50%);
+}
+
+.bwddhb-remove-item:hover {
+	color: #a52424;
+}
+.components-panel__body.parent-panelbody.is-opened .bwddhb-trash-icon {
+	display: block;
+}
+.components-panel__body.child-panelbody.is-opened + .bwddhb-trash-icon {
+	display: none;
+}
+.editor-block-list-item-duo-head-block {
+	.block-editor-block-icon svg {
+		min-height: 35px;
+		min-width: 35px;
+	}
+	.block-editor-block-types-list__item-icon {
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+	}
+}
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .wp-block-duo-head-block.container {
+    max-width: 1200px;
+}
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .wp-block-duo-head-block.full-width {
+    max-width: none;
+}
+.components-button {
+	&:focus:not(:disabled) {
+		box-shadow: none;
+	}
+	&:not(:disabled,[aria-disabled=true]):active {
+		color: #fff;
+	}
+}
+.components-input-control__container, .components-text-control__input {
+	border-radius: 5px!important;
+	-webkit-border-radius: 5px!important;
+	-moz-border-radius: 5px!important;
+	-ms-border-radius: 5px!important;
+	-o-border-radius: 5px!important;
+}
+.block-editor-block-inspector .components-input-control__backdrop, .components-text-control__input[type=text] {
+	border-color: #00BCD4!important;
+}
+.block-editor-block-inspector > div:nth-child(2):has(#tab-panel-0-bwddhb_team_normal-view, #tab-panel-0-bwddhb_team_hover-view) + div {
+    display: none;
+}
+.bwddhb-label {
+    font-weight: 500;
+}
+.block-editor-block-inspector {
+	 .components-panel__body {
+		border: none;
+		border-top: none;
+		margin-top: unset; 
+		.components-panel__body-toggle {
+			box-shadow: 0 0 1px #3f51b59e;
+		}
+	}
+	 .components-base-control__label {
+		margin-right: 0!important;
+		text-transform: capitalize;
+    	font-size: 13px;
+	}
+	.components-base-control{
+		.components-textarea-control__input {
+		height: 100px!important;
+	}
+}
+}

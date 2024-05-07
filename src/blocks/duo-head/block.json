@@ -1,0 +1,23 @@
+{
+	"apiVersion": 2,
+	"name": "bwddhb/duo-head",
+	"version": "1.0.0",
+	"title": "Duo Head",
+	"category": "bwddhb-duo-head",
+	"description": "Dual heading plugin with 30+ types of dual heading also custom text with masking effects.",
+	"example": [
+		{
+			"attributes": {
+				"style": "1"
+			}
+		}
+	],
+	"supports": {
+		"html": true,
+		"anchor": true
+	},
+	"textdomain": "duo-head-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
