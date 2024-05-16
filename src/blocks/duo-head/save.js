@@ -17,8 +17,7 @@ export default function save({ attributes }) {
 			})}
 		>
 		{enaLink ? (
-			//  target={newTab ? '_blank' : ''}
-			<a href={textUrl}>
+			<a href={textUrl} target={newTab ? '_blank' : ''} rel="noopener">
 				<RichText.Content tagName="div" className={`bwddh-first-hedi bwddh-heddi-${style}`} value={leftText}/>
 				<RichText.Content tagName="div" className={`bwddh-sec-hedi bwddh-cor-hedi-${style}`} value={rightText}/>
 			</a>

@@ -716,7 +716,7 @@ export default function Edit({ attributes, setAttributes, clientId }) {
 				})}
 			>
 				{enaLink ? (
-					<a href={textUrl} target={newTab ? '_blank' : ''}>
+					<a href={textUrl} target={newTab ? '_blank' : ''} rel="noopener">
 						<RichText className={`bwddh-first-hedi bwddh-heddi-${style}`} value={leftText} onChange={(newText) => setAttributes({ leftText: newText })} />
 						<RichText className={`bwddh-sec-hedi bwddh-cor-hedi-${style}`} value={rightText} onChange={(newText) => setAttributes({ rightText: newText })} />
 					</a>
